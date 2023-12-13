@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+
+
+    <changeSet id="add-tag-1.0.0" author="Katerina">
+        <tagDatabase tag="v.1.0.0"/>
+    </changeSet>
+
+    <include file="2023-13-12--01-init-table-users.xml" relativeToChangelogFile="true"/>
+    <include file="2023-13-12--01-init-table-status.xml" relativeToChangelogFile="true"/>
+    <include file="2023-13-12--01-init-table-priority.xml" relativeToChangelogFile="true"/>
+    <include file="2023-13-12--01-init-table-task.xml" relativeToChangelogFile="true"/>
+    <include file="2023-13-12--01-init-table-comment.xml" relativeToChangelogFile="true"/>
+    <include file="2023-13-12--01-init-default-data.xml" relativeToChangelogFile="true"/>
+
+</databaseChangeLog>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+
+    <changeSet id="init-default-status" author="Katerina">
+        <insert tableName="status">
+            <column name="name">In process</column>
+        </insert>
+        <insert tableName="status">
+            <column name="name">Wait</column>
+        </insert>
+        <insert tableName="status">
+            <column name="name">Complete</column>
+        </insert>
+        <insert tableName="status">
+            <column name="name">Cancel</column>
+        </insert>
+    </changeSet>
+
+    <changeSet id="init-default-priority" author="Katerina">
+        <insert tableName="priority">
+            <column name="name">High</column>
+        </insert>
+        <insert tableName="priority">
+            <column name="name">Medium</column>
+        </insert>
+        <insert tableName="priority">
+            <column name="name">Low</column>
+        </insert>
+    </changeSet>
+
+</databaseChangeLog>
