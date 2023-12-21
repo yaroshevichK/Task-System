@@ -61,7 +61,10 @@ create table comment
     description varchar(100000) not null,
     task_id     integer         not null
         constraint comment_task_id_fk
-            references task
+            references task,
+    author_id   bigint          not null
+        constraint comment_author_id_fk
+            references users
 );
 
 alter table comment

@@ -20,6 +20,11 @@
                              references="task (id)" nullable="false"/>
             </column>
 
+            <column name="author_id" type="int">
+                <constraints foreignKeyName="comment_author_id_fk"
+                             references="users (id)" nullable="false"/>
+            </column>
+
         </createTable>
     </changeSet>
 </databaseChangeLog>
